@@ -64,6 +64,7 @@ geocode(address,(error,{latitude,longitude,location}={})=>{
             forecast:forecastdata,
             location,
             address:address
+            
         })
     })
 })
