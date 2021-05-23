@@ -3,7 +3,7 @@ const express=require('express')
 const hbs=require('hbs')
 const forecast = require('./utils/forecast')
 const geocode=require('./utils/geocode')
-const { getMaxListeners } = require('process')
+
 
 const app=express()
 const port=process.env.PORT || 3000
@@ -88,6 +88,6 @@ app.get('*',(req,res)=>{
 
 })
 app.listen(port,()=>{
-    console.log('Server is up on port port '+port)
+    console.log('Server is up on port '+port)
 })
 
